@@ -410,7 +410,7 @@
 		
 		.four-1 {
 			width: 3.71rem;
-			height: 5.8rem;
+			height: 6rem;
 			background-color: white;
 			position: absolute;
 			top: 0.16rem;
@@ -421,7 +421,7 @@
 		
 		.section.active .four-1 {
 			width: 3.31rem;
-			height: 5.6rem;
+			height: 5.8rem;
 			top: 0.36rem;
 			left: 0.35rem;
 			opacity: 1;
@@ -440,7 +440,7 @@
 		
 		.section.active .four-2 {
 			width: 2.96rem;
-			height: 5.2rem;
+			height: 5.4rem;
 			top: 0.52rem;
 			left: 0.51rem;
 			opacity: 1;
@@ -495,7 +495,7 @@
 		
 		.section.active .four-5 {
 			opacity: 1;
-			bottom: 2.12rem;
+			bottom: 2rem;
 		}
 		
 		.four-6 {
@@ -508,7 +508,7 @@
 		
 		.section.active .four-6 {
 			opacity: 1;
-			bottom: 1.84rem;
+			bottom: 1.7rem;
 		}
 		
 		.four-7 {
@@ -521,7 +521,7 @@
 		
 		.section.active .four-7 {
 			opacity: 1;
-			bottom: 1.53rem;
+			bottom: 1.4rem;
 		}
 		
 		.four-8 {
@@ -534,7 +534,7 @@
 		
 		.section.active .four-8 {
 			opacity: 1;
-			bottom: 1.22rem;
+			bottom: 1.1rem;
 		}
 		
 		.four-9 {
@@ -547,7 +547,7 @@
 		
 		.section.active .four-9 {
 			opacity: 1;
-			bottom: 0.93rem;
+			bottom: 0.8rem;
 		}
 		
 		.five-1 {
