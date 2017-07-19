@@ -27,8 +27,8 @@
 			}
 			.bg-1{
 				width: 2.52rem;
-				height: 4.063rem;
-				top: 0.92rem;
+				height: 3.5rem;
+				top: 0.45rem;
 				right:0.18rem;
 				-webkit-transition: all 1s linear;
 				-webkit-transform-origin:1.26rem  4.063rem;
@@ -43,7 +43,7 @@
 			.bg-2{
 				width: 2.52rem;
 				height: 4.063rem;
-				top: 0.92rem;
+				top: 0.45rem;
 				right:0.18rem;
 				-webkit-transition: all 1s linear;
 				-webkit-transform-origin:1.26rem  4.063rem;
@@ -66,7 +66,7 @@
 			}
 			.section.active .bg-3{
 				opacity: 1;
-				bottom:0.60rem;
+				bottom:0.12rem;
 			}
 			
 			.bg-4{
@@ -93,11 +93,21 @@
 				left: 0.4rem;
 			}
 			.bg-6{
-				width: 0.78rem;
-				height: 1rem;
-				top: 2rem;
-				right: 0.74rem;
+				width: 0.38rem;
+				height: 0.5rem;
+				top: 1.51rem;
+				right: 0.94rem;
+				-webkit-transition: all 1.5s linear 1s;
+				
+				/*-webkit-animation:bg-runging 2s linear;*/
 			}
+			.section.active .bg-6{
+             width: 1.5rem;
+             height: 2rem;
+              top: 0.76rem;
+              right: 0.38rem;
+			}
+		
 			.bg-7{
 				width: 1.8rem;
 				height: 1.8rem;
@@ -109,20 +119,24 @@
 				width: 1.51rem;
 				height: 0.38rem;
 				position: absolute;
-				top: 3.8rem;
+				bottom: 2.72rem;
 				right:-10rem;
-				-webkit-transition: all 1s linear 1s;
+				-webkit-transition:right 1s linear 1s;
+				-webkit-transform: skew(-40deg,0deg);
+				-webkit-transition:-webkit-transform 1s linear 2s;
 				
 			}
 			.section.active .text-1{
 				right:0.28rem;
+				-webkit-transform: skew(0deg,0deg);
+				
 			}
 			.text-2{
 				font-size: 0.3rem;
 				width: 1.51rem;
 				height: 0.38rem;
 				position: absolute;
-				top: 4.2rem;
+				bottom: 2.4rem;
 				right:-10rem;
 				-webkit-transition: all 1.5s linear 1s;
 				
@@ -256,12 +270,20 @@
 				left:0.35rem;
 			}
 			.t3{
-				width: 2.55rem;
-				height: 1.35rem;
+				width: 1px;
+				height: 0.7px;
 				line-height: 0.3rem;
 				position: absolute;
-				left: 0.8rem;
-				top: 5rem;
+				left: 1.57rem;
+				bottom: 0.82rem;
+				-webkit-transition: all 0.5s linear 1s;
+				
+			}
+			.section.active .t3{
+                 width: 2.55rem;
+				 height: 1.35rem;
+                 left: 0.8rem;
+				bottom: 0.5rem;
 			}
 		</style>
 
@@ -278,7 +300,7 @@
 				<img class="bg-5" src="img/FiOcPK5PrM85TTGbvY-9qEWs8QrL.png">
 				<img class="bg-6" src="img/o_1bk65vctk1g9u1iaq1gds1g321t1il.jpeg"/>
 				<img class="bg-7" src="img/Flx--8XpSGldUBRXP22gjLf4h573.png"/>
-				<span class="text-1 animated  shake">Mid Nigh</span>
+				<span class="text-1">Mid Nigh</span>
 				<span class="text-2">Diner</span>
 				<span class="text-3">这里带给你的不仅仅是味道</span>
 				<span class="text-4">更多的是感动</span>
