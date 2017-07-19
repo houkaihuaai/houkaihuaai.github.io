@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.fullpage.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<style type="text/css">
+			html{
+				font-size: calc(100vw/3.75);
+			}
+			body{
+				font-size: 0.16rem;
+			}
+			#full-page{
+				width: 100vw;
+				max-width: 750px;
+				margin: 0px auto;
+			}
+			.section{
+				position: relative;
+			}
+			.section img{
+				position: absolute;
+			}
+			.bg-1{
+				width: 2.52rem;
+				height: 4.063rem;
+				top: 0.92rem;
+				right:0.18rem;
+				-webkit-transition: all 1s linear;
+				-webkit-transform-origin:1.26rem  4.063rem;
+				-webkit-transform: rotate(-90deg);
+				opacity: 0.2;
+			}
+			.section.active .bg-1{
+				-webkit-transform: rotate(0deg);
+				opacity: 1;
+			}
+			
+			.bg-2{
+				width: 2.52rem;
+				height: 4.063rem;
+				top: 0.92rem;
+				right:0.18rem;
+				-webkit-transition: all 1s linear;
+				-webkit-transform-origin:1.26rem  4.063rem;
+				opacity: 0.2;
+				-webkit-transform: rotate(90deg);
+			}
+			.section.active .bg-2{
+				-webkit-transform: rotate(0deg);
+				opacity: 1;
+			}
+			
+			.bg-3{
+				width: 1.45rem;
+				height: 1.9rem;
+				
+				left: 0.23rem;
+				opacity: 0;
+				bottom:-2.5rem;
+				-webkit-transition: all 1s linear 1s;
+			}
+			.section.active .bg-3{
+				opacity: 1;
+				bottom:0.60rem;
+			}
+			
+			.bg-4{
+				width:1.66rem;
+				height:1.77rem;
+				top:-1.80rem;
+				left:0.13rem;
+				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
+			}
+			.section.active .bg-4{
+				top: 2.35rem;
+			}
+			
+			.bg-5{
+				width: 1.33rem;
+				height: 0.33rem;
+				top:1.56rem;
+				left:-1.4rem;
+				z-index: 9;
+				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
+			}
+			
+			.section.active .bg-5{
+				left: 0.4rem;
+			}
+			.bg-6{
+				width: 0.78rem;
+				height: 1rem;
+				top: 2rem;
+				right: 0.74rem;
+			}
+			.bg-7{
+				width: 1.8rem;
+				height: 1.8rem;
+				top: 0.22rem;
+				left: 0.09rem;
+			}
+			.text-1{
+				font-size: 0.3rem;
+				width: 1.51rem;
+				height: 0.38rem;
+				position: absolute;
+				top: 3.8rem;
+				right:-10rem;
+				-webkit-transition: all 1s linear 1s;
+				
+			}
+			.section.active .text-1{
+				right:0.28rem;
+			}
+			.text-2{
+				font-size: 0.3rem;
+				width: 1.51rem;
+				height: 0.38rem;
+				position: absolute;
+				top: 4.2rem;
+				right:-10rem;
+				-webkit-transition: all 1.5s linear 1s;
+				
+			}
+			.section.active .text-2{
+				right:0.3rem;
+			}
+			.text-3{
+				font-size: 0.14rem;
+			
+				position: absolute;
+				bottom: -5rem;
+				opacity: 1;
+				right:0.25rem;
+				-webkit-transition: all 1s linear 2s;
+				
+			}
+			.section.active .text-3{
+				opacity: 1;
+				bottom:1rem;
+			}
+			.text-4{
+				font-size: 0.14rem;
+			
+				position: absolute;
+				bottom: -4.7rem;
+				right:0.25rem;
+				-webkit-transition: all 1.5s linear 2s;
+				
+			}
+			.section.active .text-4{
+				opacity: 1;
+				bottom:0.7rem;
+			}
+			.img-1{
+				width: inherit ;
+				height: 2.1rem;
+				top: -1rem;
+				-webkit-transition: all 0.5s linear 0.5s;
+				overflow: hidden;
+				opacity: 0;
+				
+				
+			}
+			.section.active .img-1{
+				opacity: 1;
+				top:0.1rem;
+			}
+			.img-2{
+				width: 1.8rem;
+				height: 1.8rem;
+				top: -1.5rem;
+				right: 0.18rem;
+				opacity: 0;
+				
+				-webkit-transition: all 0.7s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
+				
+			}
+			.section.active .img-2{
+				top: 1.5rem;
+				opacity: 1;
+				
+			}
+			.t1{
+				width: 1.35rem;
+				height: 0.4rem;
+				font-size: 0.24rem;
+				position: absolute;
+				top: 3.19rem;
+				left: 2rem;
+				text-align: center;
+				line-height: 0.4rem;
+				font-weight: 900;
+				color: goldenrod;
+				opacity: 0;
+				
+				-webkit-transition: all 0.4s linear 0.5s;
+				
+			}
+			.section.active .t1{
+				opacity: 1;
+				left:0rem;
+			}
+			.t4{
+				width: 1.35rem;
+				height: 0.4rem;
+				position: absolute;
+				top: 5.5rem;
+				left: 1.35rem;
+				border-left: solid 2px black;
+				opacity: 0;
+				
+				-webkit-transition: all 0.3s linear 0.5s;
+			}
+				.section.active .t4{
+				opacity: 1;
+				top:3.19rem;
+			}
+			.t5{
+				width: 1.35rem;
+				height: 0.4rem;
+				position: absolute;
+				top: 1.5rem;
+				left: 0.35rem;
+				border-left: solid 2px black;
+				opacity: 0;
+				
+				-webkit-transition: all 0.3s linear 0.5s;
+			}
+				.section.active .t5{
+				opacity: 1;
+				top:3.8rem;
+			}
+			.t2{
+				width: 1.35rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				font-weight: 900;
+				font-size: 0.24rem;
+				position: absolute;
+				top: 3.8rem;
+				left: -1.35rem;
+				text-align: center;
+				opacity: 0;
+				
+				-webkit-transition: all 0.4s linear 0.5s;
+				
+			}
+				.section.active .t2{
+				opacity: 1;
+				left:0.35rem;
+			}
+			.t3{
+				width: 2.55rem;
+				height: 1.35rem;
+				line-height: 0.3rem;
+				position: absolute;
+				left: 0.8rem;
+				top: 5rem;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="full-page">
+			<div class="section">
+				<img class="bg-1" src="img/FlZSrp-kS8Zb_rzikpWBTTki1jJs.png">
+				<img class="bg-2" src="img/FlZSrp-kS8Zb_rzikpWBTTki1jJs.png">
+				<img class="bg-3" src="img/FpJYomCVRHMmOgqKbRbqcVSHvXi3.png">
+				<img class="bg-4" src="img/FlGJJMFBUELmBR9v68qcieycKoE-.png">
+				<img class="bg-5" src="img/FiOcPK5PrM85TTGbvY-9qEWs8QrL.png">
+				<img class="bg-5" src="img/FiOcPK5PrM85TTGbvY-9qEWs8QrL.png">
+				<img class="bg-6" src="img/o_1bk65vctk1g9u1iaq1gds1g321t1il.jpeg"/>
+				<img class="bg-7" src="img/Flx--8XpSGldUBRXP22gjLf4h573.png"/>
+				<span class="text-1 animated  shake">Mid Nigh</span>
+				<span class="text-2">Diner</span>
+				<span class="text-3">这里带给你的不仅仅是味道</span>
+				<span class="text-4">更多的是感动</span>
+				
+				
+				
+			</div>
+			<div class="section">
+				<img class="img-1" src="img/Fs-hJ3LwVknMrnIJguv58odBBLjb.png"/>
+				<img class="img-2" src="img/FlGJJMFBUELmBR9v68qcieycKoE-.png"/>
+				<span class="t1">美食与爱</span>
+				<span class="t4"></span>
+				<span class="t2">不可辜负</span>
+				<span class="t5"></span>
+				
+				<div class="t3">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;这是一个人的故事，也是一群人的故事，你会从他的故事中看到你的故事，他的故事中也可能有你的故事，可能也会因此发生一段故事</span>
+					
+				</div>
+
+				
+			</div>
+			<div class="section">
+				<h3>第三屏</h3>
+			</div>
+			<div class="section">
+				<h3>第四屏</h3>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#full-page").fullpage({
+					verticalCentered: true, //内容是否居中
+					sectionsColor: ["#fbf0d4", "#fbf0d4", "yellow", "blue"], //背景色
+					anchors: ["p1", "p2", "p3", "p4"], //描点
+					scrollingSpeed: 700, //切换的速度
+					navigation: true, // 导航
+					navigationPosition: "right", //导航的位置
+					//navigationTooltips: ["提示文字1", "提示文字2", "提示文字3", "提示文字4"], //导航提示文字
+					continuousVertical: true, // 循环切换，不回弹
+					css3: true,
+
+					//回调函数 
+					// 已经进来的时候
+					afterLoad: function(anchorLink, index) {
+
+					},
+
+					// 开始要离开的时候
+					onLeave: function(index, nextIndex, direction) {
+
+					},
+					// 页面加载完成
+					afterRender: function() {
+
+					},
+
+				});
+			});
+		</script>
+	</body>
+
+</html>
