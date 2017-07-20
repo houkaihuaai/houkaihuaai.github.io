@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.fullpage.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/yaoqinghan.css"/>
+		
+
+	</head>
+
+	<body>
+		<div id="full-page">
+			<div class="section">
+				<div class="top"><span>唯美国风水墨通用邀请函</span></div>
+				<img class="img-1" src="img/o_1bb3ni75r1gk9ap41frb11i2v7en.gif"/>
+				<div class="bor-1"></div>
+				<div class="bor-2"></div>
+				<img class="img-6" src="img/o_1bdj7qapil3v1pqf2c81qti1e0h.png"/>
+				<img class="img-2" src="img/o_1bktdb87i1gqg19qp191o1d0sj3qm.png"/>
+				<img class="img-3" src="img/o_1bktdb87i1q5diln1eh41v00ml7l.png"/>
+				<img class="img-4" src="img/o_1bktdb87i1une1c062ptqtbd8ik.png"/>
+				<img class="img-5" src="img/o_1bktdbdu9p0mfostg513nk16ho1e.png"/>
+				
+					<span class="text">上海市徐汇区非凡学院</span>
+					<span class="text-1">侯凯华作</span>
+				
+			</div>
+			<div class="section">
+				<div class="top">
+					<span>唯美国风水墨通用邀请函</span>
+				</div>
+			</div>
+			<div class="section">
+				<div class="top">
+					<span>唯美国风水墨通用邀请函</span>
+				</div>
+			</div>
+			<div class="section">
+				<div class="top">
+					<span>唯美国风水墨通用邀请函</span>
+				</div>
+			</div>
+			<div class="section">
+				<div class="top">
+					<span>唯美国风水墨通用邀请函</span>
+				</div>
+				
+			</div>
+			<div class="section">
+				<div class="top">
+					<span>唯美国风水墨通用邀请函</span>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#full-page").fullpage({
+					verticalCentered: true, //内容是否居中
+					sectionsColor: ["#fbf0d4", "#fbf0d4", "#dbc4a5", "#dbc4a5","#dbc4a5","#dbc4a5","#dbc4a5"], //背景色
+					anchors: ["p1", "p2", "p3", "p4"], //描点
+					scrollingSpeed: 700, //切换的速度
+					navigation: true, // 导航
+					navigationPosition: "right", //导航的位置
+					//navigationTooltips: ["提示文字1", "提示文字2", "提示文字3", "提示文字4"], //导航提示文字
+					continuousVertical: true, // 循环切换，不回弹
+					css3: true,
+
+					//回调函数 
+					// 已经进来的时候
+					afterLoad: function(anchorLink, index) {
+
+					},
+
+					// 开始要离开的时候
+					onLeave: function(index, nextIndex, direction) {
+
+					},
+					// 页面加载完成
+					afterRender: function() {
+
+					},
+
+				});
+			});
+		</script>
+	</body>
+
+</html>
