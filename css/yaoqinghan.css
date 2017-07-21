@@ -188,7 +188,7 @@ html {
 		}
 		.bg-1{
 			top: 0rem;
-			left: 0.5rem;
+			left: 0.35rem;
 	        opacity: 0;
 		    -webkit-transition: all 0.5s linear 0.5s;
 		}
@@ -506,4 +506,367 @@ html {
 			left: 0.89rem;
        opacity: 1;
 			
+		}
+		.six-2{
+			position: absolute;
+			top: 3.32rem;
+			left: 1.38rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .six-2{
+			top: 1.32rem;
+			opacity: 1;
+			
+		}
+		.six-3{
+			height: 0rem;
+			width: 1.36rem;
+			position: absolute;
+			top: 1.84rem;
+			left: 0.3rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .six-3{
+			height: 1.62rem;
+			
+			opacity: 1;
+			
+		}
+		.six-3 img{
+			width: inherit;
+			height: inherit;
+		}
+		.six-4{
+		height: 0rem;
+			width: 1.36rem;
+			position: absolute;
+			top: 1.84rem;
+			right: 0.3rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .six-4{
+			height: 1.62rem;
+			
+			opacity: 1;
+			
+		}
+		.six-4 img{
+			width: inherit;
+			height: inherit;
+		}
+		.six-5{
+			height: 0rem;
+			width: 1.36rem;
+			position: absolute;
+			bottom: 0.76rem;
+			left: 0.3rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .six-5{
+			height: 1.62rem;
+			
+			opacity: 1;
+			
+		}
+		.six-5 img{
+			width: inherit;
+			height: inherit;
+		}
+		.six-6{
+			height: 0rem;
+			width: 1.36rem;
+			position: absolute;
+			bottom: 0.76rem;
+			right: 0.3rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .six-6{
+			height: 1.62rem;
+			
+			opacity: 1;
+			
+		}
+		.six-6 img{
+			width: inherit;
+			height: inherit;
+		}
+        .six-7{
+        	height: 0rem;
+			width: 1.36rem;
+        	background-color: rgba(0,0,0,0.5);
+        	position: absolute;
+        	top:3rem;
+			left: 0.3rem;
+			color: white;
+			font-size: 0.12rem;
+			line-height: 0.5em;
+			text-align: center;
+        	
+           opacity: 0;
+		    -webkit-transition: all 0.5s linear 1s;
+		}
+		
+		.section.active .six-7{
+			height: 0.46rem;
+			
+			opacity: 1;
+			
+		}
+          .six-10{
+        	height: 0rem;
+			width: 1.36rem;
+        	background-color: rgba(0,0,0,0.5);
+        	position: absolute;
+        	bottom:0.76rem;
+			right: 0.3rem;
+        	color: white;
+			font-size: 0.12rem;
+			line-height: 0.5em;
+			text-align: center;
+             opacity: 0;
+		    -webkit-transition: all 0.5s linear 1s;
+		}
+		
+		.section.active .six-10{
+			height: 0.46rem;
+			
+			opacity: 1;
+			
+		}
+          .six-8{
+        	height: 0rem;
+			width: 1.36rem;
+        	background-color: rgba(0,0,0,0.5);
+        	position: absolute;
+        	top:3rem;
+			right: 0.3rem;
+        	color: white;
+			font-size: 0.12rem;
+			line-height: 0.5em;
+			text-align: center;
+              opacity: 0;
+		    -webkit-transition: all 0.5s linear 1s;
+		}
+		
+		.section.active .six-8{
+			height: 0.46rem;
+			
+			opacity: 1;
+			
+		}
+          .six-9{
+        	height: 0rem;
+			width: 1.36rem;
+        	background-color: rgba(0,0,0,0.5);
+        	position: absolute;
+        	bottom:0.76rem;
+			left: 0.3rem;
+        	color: white;
+			font-size: 0.12rem;
+			line-height: 0.5em;
+			text-align: center;
+              opacity: 0;
+		    -webkit-transition: all 0.5s linear 1s;
+		}
+		
+		.section.active .six-9{
+			height: 0.46rem;
+			
+			opacity: 1;
+			
+		}
+		.seve-1{
+			border: solid 3px black;
+			position: absolute;
+			height: 1.34rem;
+			width: 0rem;
+			top: 1.75rem;
+			left: 0.17rem;
+		    opacity: 0;
+		    /*-webkit-transition: all 0.5s linear 1s;*/
+		-webkit-transition: all 1s cubic-bezier(0.69, 0.03, 0.12, 1.53) 1s;
+		    
+		}
+		
+		.section.active .seve-1{
+			width: 1.68rem;
+			
+			opacity: 1;
+			
+		}
+          .seve-1 img{
+          	width: inherit;
+          	height: inherit;
+          }
+          .seve-2{
+			border: solid 3px black;
+			position: absolute;
+			height: 1.34rem;
+			width: 0rem;
+			top: 1.75rem;
+			right: 0.17rem;
+			    opacity: 0;
+		-webkit-transition: all 1s cubic-bezier(0.69, 0.03, 0.12, 1.53) 1s;
+		}
+		
+		.section.active .seve-2{
+			width: 1.5rem;
+			
+			opacity: 1;
+			
+		}
+          .seve-2 img{
+          	width: inherit;
+          	height: inherit;
+          }
+          .seve-3{
+			border: solid 3px black;
+			position: absolute;
+			height: 0rem;
+			width: 3.34rem;
+			bottom: 1.05rem;
+			left: 0.17rem;
+			    opacity: 0;
+		-webkit-transition: all 1s cubic-bezier(0.69, 0.03, 0.12, 1.53) 1s;
+		}
+		
+		.section.active .seve-3{
+			height: 2.05rem;
+			
+			opacity: 1;
+			
+		}
+          .seve-3 img{
+          	width: inherit;
+          	height: inherit;
+          }
+          .seven-1{
+          	 width: 2.5rem;
+              height: 0.34rem;
+              border: solid 0.01rem black;
+              position: absolute;
+              top: 1.7rem;
+              left: 0.57rem;
+          }
+            .seven-2{
+          	width: 2.5rem;
+              height: 0.34rem;
+              border: solid 0.01rem black;
+              position: absolute;
+              top: 2.2rem;
+              left: 0.57rem;
+          }
+            .seven-3{
+          	  width: 2.5rem;
+              height: 0.34rem;
+              border: solid 0.01rem black;
+              position: absolute;
+              top: 2.7rem;
+              left: 0.57rem;
+          }
+            .seven-4{
+          	 width: 2.5rem;
+              height: 0.34rem;
+              border: solid 0.01rem black;
+              position: absolute;
+              top: 3.2rem;
+              left: 0.57rem;
+          }
+            .seven-5{
+          	  width: 2.5rem;
+              height: 0.34rem;
+              border: solid 0.01rem black;
+              position: absolute;
+              top: 3.7rem;
+              left: 0.57rem;
+          }
+              .seven-6{
+          	  width: 2.5rem;
+              height: 0.34rem;
+              border: solid 0.01rem black;
+              position: absolute;
+              top: 4.2rem;
+              left: 0.57rem;
+          }
+
+.nine-1{
+	width: 2.2rem;
+	height: 2.2rem;
+	position: absolute;
+	top: 2rem;
+	left: 0.71rem;
+	background-color: black;
+}
+.nine-2{
+	width:2.04rem ;
+	height: 2.04rem;
+	top: 2.08rem;
+	left: 0.79rem;
+}
+.nine-3{
+	height: 0.85rem;
+	width: 2.2rem;
+	position: absolute;
+	bottom: 1.1rem;
+	left: 0.71rem;
+	text-align: center;
+	font-weight: 500;
+	line-height: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+	.si-1{
+			width: 3.46rem;
+			height: 0.95rem;
+			position: absolute;
+			top:1.15rem;
+			left: 0.1rem;
+			font-size: 0.24rem;
+			color: grey;
+			font-weight: 900;
+			text-align: center;
+			border-bottom: solid 1px black;
+		}
+		.si-2{
+			width: 1.78rem;
+			height: 1.78rem;
+			top: 2.54rem;
+			left: 1rem;
+		}
+		.si-3{
+			position: absolute;
+			font-size: 0.18rem;
+			padding: 0  0.2rem;
+			bottom: 3.5rem;
+			left: 0.9rem;
+			color: goldenrod;
+			
+			opacity: 0;
+			
+			-webkit-transition: all 0.5s cubic-bezier(0.79, 1.01, 0.52, 1.53) 1.5s;
+		}
+		
+		.section.active .si-3 {
+			opacity: 1;
+			
+			bottom: 0.6rem;
 		}
