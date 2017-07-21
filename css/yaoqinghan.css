@@ -230,16 +230,16 @@ html {
 			width: 4.28rem;
 			border: solid 0.03rem black;
 			position: absolute;
-			top: 1.39rem;
-			left: -0.29rem;
+				bottom: 2.4rem;
+			left: 1.21rem;
 			opacity: 0;
 			-webkit-transition: all 1s linear 0.3s;
 		}
 		
-		.section.active .bar-1 {
+		.section.active .bar-2 {
 			height: 3.65rem;
 			width: 3.28rem;
-			top: 1.89rem;
+			bottom: 0.4rem;
 			left: 0.21rem;
 			opacity: 1;
 			
@@ -249,7 +249,7 @@ html {
 			width: 1.28rem;
 			border: solid 0.03rem black;
 			position: absolute;
-		    top: 3.39rem;
+			bottom: 2.4rem;
 			left: 1.21rem;
 			opacity: 0;
 			-webkit-transition: all 1s linear 0.3s;
@@ -258,7 +258,7 @@ html {
 		.section.active .bar-2 {
 			height: 3.65rem;
 			width: 3.28rem;
-			top: 1.89rem;
+			bottom: 0.4rem;
 			left: 0.21rem;
 			opacity: 1;
 			
@@ -268,7 +268,8 @@ html {
 			width: 1.6rem;
 			height: 0.2rem;
 			font-size: 0rem;
-			top: 2.34rem;
+		    bottom: 4rem;
+              
 			left: 1.88rem;
 			font-weight: 900;
 			opacity: 0;
@@ -276,7 +277,7 @@ html {
 		}
 		
 		.section.active .t3 {
-		top: 2.24rem;
+		    bottom: 3.6rem;
 			left: 1.08rem;
 			font-size: 0.2rem;
 			opacity: 1;
@@ -289,7 +290,7 @@ html {
 			width:2.66rem ;
 			position: absolute;
 			font-size: 0rem;
-			top: 4.01rem;
+			bottom: 1rem;
 			left: 1.85rem;
 			line-height: 2em;
 			opacity: 0;
@@ -297,7 +298,7 @@ html {
 		}
 		
 		.section.active .t4 {
-			top: 2.71rem;
+			bottom: 0.7rem;
 			left: 0.52rem;
 			font-size: 0.16rem;
 			opacity: 1;
@@ -310,7 +311,7 @@ html {
 			color: white;
 			font-size: 0.24rem;
 			position: absolute;
-			top: 6.88rem;
+			bottom: -1rem;
 			left: 1.32rem;
 			text-align: center;
 			line-height: 0.32rem;
@@ -319,7 +320,7 @@ html {
 		}
 		
 		.section.active .logo{
-			top: 5.38rem;
+			bottom: 0.2rem;
 			opacity: 1;
 			
 		}
