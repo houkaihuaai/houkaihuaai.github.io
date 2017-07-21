@@ -27,9 +27,10 @@ html {
 			height: 6.08rem;
 			width: 4rem;
 			top: 0.56rem;
+			left: 0;
 		}
 		.top{
-			width: 4rem;
+			width: 3.85rem;
 			height: 0.56rem;
 			position: absolute;
 			top: 0;
@@ -185,3 +186,141 @@ html {
 			opacity: 1;
 			
 		}
+		.bg-1{
+			top: 0rem;
+			left: 0.5rem;
+	        opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .bg-1{
+			top: 0.83rem;
+			opacity: 1;
+			
+		}
+		.t1{
+			font-size: 0.22rem;
+			position: absolute;
+			top: 2.96rem;
+			left: 1.36rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .t1{
+			top: 0.96rem;
+			opacity: 1;
+			
+		}
+		.t2{
+			position: absolute;
+			top: 3.32rem;
+			left: 1.26rem;
+		     opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .t2{
+			top: 1.32rem;
+			opacity: 1;
+			
+		}
+		.bar-1{
+			height: 5.15rem;
+			width: 4.28rem;
+			border: solid 0.03rem black;
+			position: absolute;
+			top: 1.39rem;
+			left: -0.29rem;
+			opacity: 0;
+			-webkit-transition: all 1s linear 0.3s;
+		}
+		
+		.section.active .bar-1 {
+			height: 4.15rem;
+			width: 3.28rem;
+			top: 1.89rem;
+			left: 0.21rem;
+			opacity: 1;
+			
+		}
+		.bar-2{
+			height: 1.15rem;
+			width: 1.28rem;
+			border: solid 0.03rem black;
+			position: absolute;
+		    top: 3.39rem;
+			left: 1.21rem;
+			opacity: 0;
+			-webkit-transition: all 1s linear 0.3s;
+		}
+		
+		.section.active .bar-2 {
+			height: 4.15rem;
+			width: 3.28rem;
+			top: 1.89rem;
+			left: 0.21rem;
+			opacity: 1;
+			
+		}
+		.t3{
+			position: absolute;
+			width: 1.6rem;
+			height: 0.2rem;
+			font-size: 0rem;
+			top: 2.34rem;
+			left: 1.88rem;
+			font-weight: 900;
+			opacity: 0;
+			-webkit-transition: all 1s linear 0.3s;
+		}
+		
+		.section.active .t3 {
+		top: 2.24rem;
+			left: 1.08rem;
+			font-size: 0.2rem;
+			opacity: 1;
+			
+		}
+		.t4{
+			font-weight: 400;
+			
+			height: 2.6rem;
+			width:2.66rem ;
+			position: absolute;
+			font-size: 0rem;
+			top: 4.01rem;
+			left: 1.85rem;
+			line-height: 2em;
+			opacity: 0;
+			-webkit-transition: all 1s linear 0.3s;
+		}
+		
+		.section.active .t4 {
+			top: 2.71rem;
+			left: 0.52rem;
+			font-size: 0.16rem;
+			opacity: 1;
+			
+		}
+		.logo{
+			height: 0.32rem;
+			width: 1.06rem;
+			background-color: black;
+			color: white;
+			font-size: 0.24rem;
+			position: absolute;
+			top: 6.88rem;
+			left: 1.32rem;
+			text-align: center;
+			line-height: 0.32rem;
+		     opacity: 0;
+		    -webkit-transition: all 1s linear 1.5s;
+		}
+		
+		.section.active .logo{
+			top: 5.88rem;
+			opacity: 1;
+			
+		}
+		
