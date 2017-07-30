@@ -1,0 +1,86 @@
+.jianjie{
+	height: 1120px;
+	/*background-color: red;*/
+}
+.jianjie .daohang{
+	width: 220px;
+	height: 640px;
+	/*background-color: red;*/
+    border: solid 1px #f6f6f6;
+	box-sizing: border-box;
+	
+}
+.jianjie .daohang .tou{
+	height: 50px;
+	/*background-color: green;*/
+	line-height: 50px;
+	font-size: 18px;
+		padding: 0 26px;
+		border-bottom: solid 1px #f6f6f6;
+}
+.jianjie .daohang ul{
+	list-style: none;
+	
+}
+.jianjie .daohang ul li{
+	height: 42px;
+	line-height: 42px;
+	font-size: 12px;
+	background-color: white;
+	padding-left:26px ;
+	box-sizing: border-box;
+}
+.jianjie .daohang ul li a{
+	font-size: 12px;
+	color:#51574b ;
+}
+.jianjie .daohang a:hover{
+	color: #df1521;
+
+}
+.jianjie .daohang li:hover{
+	background-color:#f3f3f3;
+	
+}
+.jianjie .jianjie-new{
+	height: 1120px;
+	width: 950px;
+	/*background-color: blue;*/
+	border: solid 1px  #f6f6f6;
+}
+.jianjie .jianjie-new .top-zuopin{
+	height: 50px;
+	width:inherit;
+	padding: 0px 22px;
+	font-size: 18px;
+	box-sizing: border-box;
+	line-height: 50px;
+	position: relative;
+	/*background-color: yellow;*/
+	border-bottom: solid 1px #f6f6f6;
+}
+.jianjie .jianjie-new .top-zuopin p{
+	width: 950px;
+}
+.jianjie .jieshao{
+	width: inherit;
+	height: 1070px;
+	/*background-color: green;*/
+	padding: 0px 22px;
+	box-sizing: border-box;
+}
+.jianjie .jieshao p{
+	line-height: 28px;
+	font-size: 14px;
+	color: #333333;
+	margin-bottom: 14px;
+}
+.jianjie .jieshao ul{
+	list-style: none;
+}
+.jianjie .jieshao ul li{
+	float: left;
+	margin-left: 26px;
+	margin-top: 36px;
+	text-align: center;
+}

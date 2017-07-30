@@ -1,0 +1,136 @@
+.zhanshiqu{
+	height: 1120px;
+	/*background-color: red;*/
+}
+.zhanshiqu .daohang{
+	width: 220px;
+	height: 386px;
+	/*background-color: red;*/
+    border: solid 1px #f6f6f6;
+	box-sizing: border-box;
+	
+}
+.zhanshiqu .daohang .tou{
+	height: 50px;
+	/*background-color: green;*/
+	line-height: 50px;
+	font-size: 18px;
+		padding: 0 26px;
+		border-bottom: solid 1px #f6f6f6;
+}
+.zhanshiqu .daohang ul{
+	list-style: none;
+	
+}
+.zhanshiqu .daohang ul li{
+	height: 42px;
+	line-height: 42px;
+	font-size: 12px;
+	background-color: white;
+	padding-left:26px ;
+	box-sizing: border-box;
+}
+.zhanshiqu .daohang ul li a{
+	font-size: 12px;
+	color:#51574b ;
+}
+.zhanshiqu .daohang a:hover{
+	color: #df1521;
+
+}
+.zhanshiqu .daohang li:hover{
+	background-color:#f3f3f3;
+	
+}
+.zhanshiqu .text{
+	height: inherit;
+	width: 950px;
+	/*background-color: blue;*/
+	border: solid 1px  #f6f6f6;
+}
+.zhanshiqu .text .top-zuopin{
+	height: 50px;
+	width:inherit;
+	padding: 0px 22px;
+	font-size: 18px;
+	box-sizing: border-box;
+	line-height: 50px;
+	position: relative;
+	/*background-color: yellow;*/
+	border-bottom: solid 1px #f6f6f6;
+}
+.zhanshiqu .text .top-zuopin p{
+	width: 950px;
+}
+.zhanshiqu .text .zhanshi{
+	height: 900px;
+	width: inherit;
+	list-style: none;
+	/*background-color: gold;*/
+}
+.zhanshiqu .text .zhanshi li{
+	float: left;
+	display: none;
+	
+	
+}
+.zhanshiqu .text .zhanshi li:first-child{
+	display: block;
+}
+.zhanshiqu .text .zhanshi .wenben{
+	float: left;
+	margin-left: 26px;
+	margin-top: 36px;
+	height: 260px;
+	width: 286px;
+	/*background-color: green;*/
+	padding: 10px;
+	box-sizing: border-box;
+	line-height: 2em;
+}
+.zhanshiqu .text .zhanshi .wenben a{
+	color: #a0a0a0 ;
+}
+.zhanshiqu .text .zhanshi .wenben a:hover{
+	color: green;
+}
+.zhanshiqu .text .zhanshi .wenben .img{
+	width: 266px;
+	height: 180px;
+				overflow: hidden;
+	
+	/*background-color: red;*/
+}
+.zhanshiqu .text .zhanshi .wenben:hover{
+	background-color: white;
+	border: solid 1px #f6f6f6;
+}
+.zhanshiqu .text .zhanshi .wenben .img img{
+	height: inherit;
+	width: inherit;
+				position: relative;
+	
+}
+.zhanshiqu .text .qiehuan{
+	height: 170px;
+	/*background-color: red;*/
+	padding: 80px 0px;
+	box-sizing: border-box;
+	text-align: center;
+	
+}
+.zhanshiqu .text .qiehuan ul{
+	list-style: none;
+	margin-left: 209px;
+
+}
+.zhanshiqu .text .qiehuan ul li{
+	float: left;
+	width: 66px;
+	height: 40px;
+	border: solid 1px #9896A3;
+	line-height: 40px;
+	text-align: center;
+	margin: 0px 5px;
+}
+
