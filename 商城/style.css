@@ -1,0 +1,184 @@
+body {
+	background: #f7f7f7;
+}
+
+.con {
+	max-width: 640px;
+	margin: 0 auto;
+}
+.menu-top{
+	width: 100%;
+	max-width: 640px;
+	bottom: 0px;
+	display: none;	
+}
+.menu-top ul{
+	width: 100%;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+}
+.menu-top ul li{
+	float: left;
+	width: 20%;
+}
+.menu-top ul li .glyphicon{
+	font-size: 30px;
+}
+
+
+
+.menu-bar{
+	height: 60px;
+}
+.menu-bar span{
+	font-size: 25px;
+	line-height: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.icon-color{
+	color: gray;
+}
+
+.top-search {
+	width: 100%;
+	max-width: 640px;
+	position: relative;
+	top: 10px;
+}
+
+.top-search .btn-home {
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px #e3e3e3 solid;
+}
+
+
+/********轮播图片**********/
+
+.slider-wrapper {
+	margin-top: 30px;
+}
+
+
+/***中间分类导航***/
+
+.nav-box .row  .cell .glyphicon{
+	font-size: 30px;
+}
+
+.nav-box .row {
+	margin-top: 5px;
+}
+
+.nav-box .row .cell {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px #e3e3e3 solid;
+	background-color: white;
+}
+
+.cell span {
+	padding-bottom: 10px
+}
+
+
+/**商品列表**/
+
+.goods-list {
+	margin-top: 1em;
+}
+
+.goods-list ul li {
+	clear: both;
+	background-color: white;
+	margin-bottom: 1em;
+	border-bottom: 1px #E3E3E3 dotted;
+}
+
+.goods-list ul li img {
+	width: 7em;
+	height: 7em;
+	float: left;
+	line-height: 7em;
+}
+
+.goods-list ul li dl {
+	margin-left: 7.5em;
+	height: 7em;
+}
+
+
+/****底部导航菜单****/
+
+.bottom-bar {
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	bottom: 0px;
+	background-color: white;
+	display: block;
+}
+
+.bottom-bar ul {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.bottom-bar ul li {
+	float: left;
+	width: 20%;
+}
+
+.bottom-bar ul li p {
+	margin-bottom: 0px;
+}
+
+.bottom-bar ul li .glyphicon {
+	font-size: 30px;
+}
+
+/*********返回顶部***********/
+.back-top{
+	border-radius: 100%;
+	width: 4em;
+	height: 4em;
+	position: fixed;
+	background-color: rgba(0,0,0,0.4);
+	bottom: 6em;
+	right: 2em;
+}
+.back-top span{
+	color: white;
+	font-size: 30px;
+	padding-left: 0.5em;
+	padding-top: 0.4em;
+}
+/*******隐藏搜索框样式定义********/
+
+.search {
+	max-width: 640px;
+	margin: 0 auto;
+	display: none;
+}
+
+.search-header {
+	height: 60px;
+}
+
+.search-header h3 {
+	margin-top: 0;
+	line-height: 60px;
+}
+
+.search-header h3 span {
+	padding-right: 20px;
+}
+
+.search .input-group {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}

@@ -59,7 +59,7 @@ a {
 }
 
 .top li:hover {
-	background-color: gainsboro;
+	background-color: #F6F6F6;
 }
 
 .top li:hover .erji {
@@ -72,7 +72,7 @@ a {
 	left: 0px;
 	width: 100px;
 	text-align: center;
-	background-color: gainsboro;
+	background-color: white;
 	display: none;
 	z-index: 9999;
 }
@@ -83,7 +83,7 @@ a {
 }
 
 .top .erji li:hover {
-	background-color: #e1f3fd;
+	background-color: #F6F6F6;
 }
 
 .top .erji li:hover a {
@@ -363,7 +363,7 @@ font-size: 18px;
 	box-sizing: border-box;
 	top: 41px;
 	left: 220px;
-	background-color: #dcd9d9;
+	background-color: #F6F6F6;
 }
 
 .class .erjicaidan-list ul {
@@ -739,10 +739,15 @@ font-size: 18px;
 	width: 250px;
 	height: 180px;
 	margin-bottom: 15px;
+	overflow: hidden;
+	position: relative;
 }
 .xueyuan .class-info .img img {
 	width: inherit;
 	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .xueyuan .class .neirong {
 	height: 60px;
@@ -750,6 +755,7 @@ font-size: 18px;
 	background-color: #000000;
 }
 .jiuyemingxing{
+	width: 1200px;
 	height: 278px;
 	margin-top: 28px;
 	/*background-color: blue;*/
@@ -766,12 +772,16 @@ font-size: 18px;
 	height: 228px;
 	margin-top: 8px;
 	background-color: #f3f3f3;
+	position: relative;
 }
 .jiuyemingxing .liebiao .zuo{
 	width: 72px;
 	margin: 0px;
 	background-color: #f3f3f3;
 	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .jiuyemingxing .liebiao .zuo-1{
 	width: 50px;
@@ -787,18 +797,38 @@ font-size: 18px;
 	background-color: rgba(0,0,0,0.5);
 	color: #FFFFFF;
 }
-
+.jiuyemingxing .liebiao .you-1{
+	width: 50px;
+	height: 70px;
+	color: gray;
+	background-color: #f3f3f3;
+	margin: auto;
+	margin-top: 79px;
+	text-align: center;
+	/*display: none;*/
+}
+.jiuyemingxing .liebiao .you-1:hover{
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+}
 .jiuyemingxing .liebiao .you{
 	width: 72px;
 	margin: 0px;
 	background-color:#f3f3f3;
 	height: inherit;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .jiuyemingxing .liebiao .coment{
 	width: 1056px;
 	margin: 0px;
 	background-color:#f3f3f3;
 	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 75px;
+	overflow: hidden;
 }
 .jiuyemingxing .liebiao .coment .img{
 	width: 74px;
@@ -816,14 +846,13 @@ font-size: 18px;
 	border-radius: 50%;
 }
 .jiuyemingxing .liebiao .coment ul{
-	height: 228px;
-	background-color: #f3f3f3;
-	display: none;
+	position: absolute;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-.jiuyemingxing .liebiao .coment ul:first-child{
-	display: block;
-}
-.jiuyemingxing .liebiao .coment ul li{
+.jiuyemingxing .liebiao .coment li{
 	list-style: none;
 	width: 320px;
 	background-color: #f3f3f3;
@@ -832,6 +861,7 @@ font-size: 18px;
 	height: inherit;
 	float: left;
 }
+
 .jiuyemingxing .liebiao .coment .text p{
 	margin: 24px 0px;
 	line-height: 1.5em;
@@ -931,11 +961,15 @@ font-size: 18px;
 	width: 1100px;
 	height: 100px;
 	background-color: white;
+	overflow: hidden;
+	position: relative;
+	
 }
 .qiye .img .img-new ul{
-	width: inherit;
 	height: inherit;
 	overflow: hidden;
+	position: absolute;
+	left: 0;
 }
 .qiye .img .img-new ul li{
 	width: 170px;

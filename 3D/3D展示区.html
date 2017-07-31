@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.imges {
+				width: 640px;
+				height: 378px;
+				/*border: solid red 1px;*/
+				position: relative;
+				margin: 50px auto;
+			}
+			
+			.imges ul {
+				width: inherit;
+				height: inherit;
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				position: relative;
+				z-index: -99;
+			}
+			
+			.imges ul li {
+				width: inherit;
+				height: inherit;
+				display: none;
+			}
+			
+			.imges ul li img {
+				width: inherit;
+				height: inherit;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="imges">
+			<ul>
+				<li style="display: block;"><img src="img/iTouch/itouch(0).jpg" /></li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var imagesCount = 78;
+				for(var i = 1; i < imagesCount; i++) {
+					$(".imges ul").append("<li><img src='img/iTouch/itouch(" + i + ").jpg'/></li>")
+				};
+				var img = $(".imges li")
+				var index = 0;
+				var timer = setInterval(function() {
+					img.eq(index).hide();
+					index = (index + 1) % imagesCount;
+					img.eq(index).show();
+				}, 50);
+								$(".imges").hover(function(){
+									clearInterval(timer);
+								},function(){
+									timer = setInterval(function(){
+									img.eq(index).hide();
+									index = (index+1)%imagesCount;
+									img.eq(index).show();
+								},50);
+								});
+//				$(".imges").hover(function() {
+//					clearInterval(timer);
+//				}, function() {
+//					timer = setInterval(function() {
+//						img.eq(index).hide();
+//						index = (index + 1) % imagesCount;
+//						img.eq(index).show();
+//					}, 50);
+//				});
+				var flag = false
+				$(".imges").on({
+					startX: 0,
+					mousedown: function(e) {
+						flag = true;
+						this.startX = e.clientX;
+
+					},
+					mousemove: function(e) {
+						var x = e.clientX;
+						if(flag) {
+							if(x < this.startX) {
+								img.eq(index).hide();
+								index = (index + 1) % imagesCount;
+								index = (index + 1) % imagesCount;
+								img.eq(index).show();
+							} else {
+								img.eq(index).hide();
+								index = (index + imagesCount - 1) % imagesCount;
+								index = (index + imagesCount - 1) % imagesCount;
+
+								img.eq(index).show();
+							}
+							this.startX = x;
+						}
+					},
+					mouseleave: function(e) {
+						console.log("3");
+						flag = false;
+					},
+					mouseup: function(e) {
+						flag = false;
+					},
+				});
+			});
+		</script>
+	</body>
+
+</html>

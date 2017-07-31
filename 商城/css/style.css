@@ -1,0 +1,121 @@
+body,
+html {
+	background-color: #F0F0F0;
+}
+
+.content {
+	/**容器**/
+	max-width: 640px;
+	margin: 0px auto;
+}
+
+
+/**顶部菜单栏**/
+
+.header {
+	height: 4.5em;
+	text-align: center;
+}
+
+.header span {
+	position: relative;
+	top: 0.6em;
+	font-size: 2em;
+}
+
+.header .title {
+	top: 0.8em;
+	font-size: 1.5em;
+}
+
+.header .pull-left {
+	padding-left: 0.3em;
+}
+
+.header .pull-right {
+	padding-right: 0.3em;
+}
+
+
+/**菜单栏**/
+
+.menu {
+	height: 4.3em;
+	max-width: 640px;
+	width: 100%;
+	padding-top: 5px;
+	background-color: white;
+	color: #999;
+}
+
+.menu a {
+	color: #999;
+}
+
+.menu a:hover {
+	text-decoration: none;
+}
+
+.menu ul {
+	text-align: center;
+	margin: 0px;
+	padding: 0em;
+}
+
+.menu ul li {
+	float: left;
+	width: 20%;
+}
+
+.menu ul li span {
+	font-size: 2em;
+}
+
+
+/**搜索页面**/
+
+.search {
+	max-width: 640px;
+	margin: 0px auto;
+}
+
+.search .input-group {
+	padding-top: 20px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+/**登录页面**/
+
+.login-well {
+	margin-top: 20px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.login-btn-group {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.login-btn-group .pull-right{
+	margin-top: 10px;
+}
+
+/**分类页面**/
+.category ul{
+	margin: 0px;
+	padding: 0px;
+}
+.category ul li{
+	list-style: none;
+}
+.category .category-panel{
+	height: 5em;
+	background-color: white;
+}
+.category-child a{
+	height: 4em;
+	display: block;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-bottom:1px solid #d6d6d6;
+}
