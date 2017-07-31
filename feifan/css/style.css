@@ -364,6 +364,7 @@ font-size: 18px;
 	top: 41px;
 	left: 220px;
 	background-color: #F6F6F6;
+	display: none;
 }
 
 .class .erjicaidan-list ul {

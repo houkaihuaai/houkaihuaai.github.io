@@ -2066,24 +2066,31 @@
 				points.removeClass("active").eq(index).addClass("active");
 
 			}, 1000);
-
+			
+			<!--设置二级菜单的弹出-->
 			$(".yiji li").hover(function() {
 				var index = $(this).index();
+				$(".yiji li").removeClass("hover");
+				$(this).addClass("hover");
 				if(index > 0) {
-					$(".yiji li").removeClass("hover");
-					$(this).addClass("hover");
+					
 					$(".erjicaidan-list").show();
 					$(".erjicaidan-list ul").hide();
 					$(".erjicaidan-list ul:nth-child(" + index + ")").show();
-				}
+				} else {
+			return
+		}
 			}, function() {
-				console.log("2");
+					$(".yiji li").removeClass("hover");
+					$(".erjicaidan-list ul").hide();
+				
 			});
 			$(".class-list").mouseleave(function() {
 				$(".yiji li").removeClass("hover");
 				$(".erjicaidan-list").hide();
 			});
-
+			
+	
 
                                    <!--最新开班-->
 			$(".new-class .tab li").hover(function() {
