@@ -50,6 +50,7 @@ html {
 			top: -1.5rem;
 			left: 2rem;
 			opacity: 0;
+			z-index: 999;
 			
 		    -webkit-transition: all 0.5s linear 0.3s;
 		}
@@ -79,7 +80,7 @@ html {
 			left: 2rem;
 			opacity: 0;
 			
-		    -webkit-transition: all 1s linear 0.5s;
+		    -webkit-transition: all 3s linear 0.5s;
 		}
 		
 		.section.active .img-3 {
@@ -272,7 +273,7 @@ html {
 		.two-3{
 			bottom: 0.80rem;
 			left: -2.58rem;
-			z-index: 99;
+			z-index: 999;
 			opacity: 0;
 		    -webkit-transition: all 0.7s linear 1.5s;
 		}
@@ -282,57 +283,7 @@ html {
 			opacity: 1;
 			
 		}
-		.two-13{
-			width: 0rem;
-			height: 0rem;
-			position: absolute;
-			z-index: 100;
-			bottom: 1.92rem;
-			left: 1.55rem;
-			overflow: hidden;
-			opacity: 0;
-			
-		    -webkit-transition: all 1s linear 2.2s;
-		}
 		
-		.section.active .two-13 {
-			bottom: 1.16rem;
-			left: 0.77rem;
-			width: 1.58rem;
-			height: 1.56rem;
-			opacity: 1;
-			
-		}
-		.two-13 img{
-			width:1.58rem ;
-		}
-		.two-14{
-			width: 0.56rem;
-			height: 0.52rem;
-			position: absolute;
-			z-index: 100;
-			top: 1.66rem;
-			left: 1.27rem;
-			overflow: hidden;
-		    -webkit-transform:rotate(350deg);
-			
-				opacity: 0;
-			
-		    -webkit-transition: all 1s linear 2.2s;
-		}
-		
-		.section.active .two-14 {
-			top: 1.18rem;
-			left: 0.77rem;
-			width: 1.58rem;
-			height: 1.52rem;
-			opacity: 1;
-			
-		}
-		.two-14 img{
-			width:1.58rem ;
-			
-		}
 		.two-4{
 			top: 0.59rem;
 			right: 2.1rem;
@@ -449,4 +400,281 @@ html {
 			right: 0.96rem;
 			opacity: 1;
 			
+		}
+		.str-1{
+			width: 2.1rem;
+			height: 2.3rem;
+			z-index: 999;
+			top: 1.37rem;
+			left: 0.5rem;
+			
+		}
+		.t1{
+			color: #f14483;
+			position: absolute;
+			top: 3.85rem;
+			left: 0.64rem;
+			z-index: 999;
+		}
+		.t2{
+			color: #f14483;
+			position: absolute;
+			top: 4.2rem;
+			left: 0.64rem;
+			z-index: 999;
+		}
+		.t3{
+			color: #f14483;
+			position: absolute;
+			top: 4.55rem;
+			left: 0.64rem;
+			z-index: 999;
+		}
+		.t4{
+			color: #f14483;
+			position: absolute;
+			top: 4.85rem;
+			left: 0.64rem;
+			z-index: 999;
+		}
+		
+		.four{
+			height: 5.05rem;
+			width: 3.2rem;
+			border: solid 0.1rem #6faf8c;
+			position: absolute;
+			top: 0.61rem;
+			left: 0.14rem;
+			box-sizing: border-box;
+		}
+		.four-1{
+			top: 4.2rem;
+			right: 3.72rem;
+			z-index: 999;
+				opacity: 0;
+		    -webkit-transition: all 0.5s linear 2s;
+		}
+		
+		.section.active .four-1 {
+			right: 0.2rem;
+			opacity: 1;
+			
+		}
+		.four-2{
+			top: 4.2rem;
+			right: 4.96rem;
+			z-index: 999;
+				opacity: 0;
+		    -webkit-transition: all 1s linear 2.2s;
+		}
+		
+		.section.active .four-2 {
+			right: 0.4rem;
+			opacity: 1;
+			
+		}
+		.four-3{
+			height: 2.57rem;
+			width: 1.36rem;
+			top: 0.88rem;
+			left: 0.3rem;
+			z-index: 999;
+		}
+		.four-4{
+			height: 2.57rem;
+			width: 1.49rem;
+			top: 0.88rem;
+			left: 1.69rem;
+			z-index: 999;
+			
+		}
+		.four-5{
+			height: 1.85rem;
+			width: 2.86rem;
+			top: 3.55rem;
+			left: 0.3rem;
+		}
+		.text{
+			height: 3.5rem;
+			width: 2.2rem;
+			position: absolute;
+			top: 1.6rem;
+			left: 0.73rem;
+			z-index: 999;
+			text-align: center;
+			color: #f14483;
+			
+		}
+		
+		
+		.six-1{
+			top: 1.6rem;
+			left: 0.3rem;
+			height: 1.85rem;
+			width: 1.36rem;
+		}
+		.six-2{
+			top: 1.6rem;
+			left: 1.75rem;
+			height: 1.85rem;
+			width: 1.36rem;
+		}
+		.six-3{
+			top: 3.56rem;
+			left: 0.3rem;
+			height: 1.85rem;
+			width: 2.87rem;
+		}
+		.six-4{
+			color: #f14483;
+			font-size: 0.18rem;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			margin: 0;
+			padding: 0;
+			font-weight: 700;
+			margin: 0;
+			padding: 0;
+			font-weight: 700;
+			}
+		.six-5{
+			color: #f14483;
+			font-size: 0.18rem;
+			position: absolute;
+			top: 1.3rem;
+			right: 1rem;
+			margin: 0;
+			padding: 0;
+			font-weight: 700;
+		}
+		.six-6{
+			top: 1.34rem;
+			left: 1.4rem;
+			z-index: 999;
+		}
+		.six-7{
+			top: 5.16rem;
+			left: 0.2rem;
+			z-index: 999;
+			
+		}
+		
+		/*第七页*/
+		.seven-1{
+			top: 1.6rem;
+			left: 0.57rem;
+			z-index: 999;
+		}
+		.seven-2{
+			top: 1.6rem;
+			left: 2.67rem;
+			z-index: 999;
+			
+		}
+		.seven-3{
+			top: 2.4rem;
+			left: 0.57rem;
+			z-index: 999;
+			height: 0.9rem;
+			
+		}
+		.seven-4{
+			top: 2.4rem;
+			left: 1.54rem;
+			z-index: 999;
+			
+		}
+		.seven-5{
+			top: 2.4rem;
+			left: 2.53rem;
+			z-index: 999;
+			
+		}
+		.seven-6{
+			top: 3.36rem;
+			left: 1.54rem;
+			z-index: 999;
+			
+		}
+		.seven-7{
+			top: 2rem;
+			left: 0.15rem;
+			z-index: 999;
+			
+		}
+		.seven-8{
+			top: 2.4rem;
+			left: 0.15rem;
+			z-index: 999;
+			
+		}
+		.seven-9{
+
+			top: 2.8rem;
+			left: 0.15rem;
+			z-index: 999;
+			
+		}
+		.seven-10{
+			top: 2rem;
+			left: 1.4rem;
+			z-index: 999;
+			
+		}
+		.seven-11{
+			top: 2rem;
+			left: 2.24rem;
+			z-index: 999;
+			
+		}
+		.seven-12{
+			top: 2rem;
+			left: 3.5rem;
+			z-index: 999;
+		}
+		.seven-13{
+			top: 2.4rem;
+			left: 3.5rem;
+			z-index: 999;
+		}
+		.seven-14{
+			top: 2.8rem;
+			left: 3.5rem;
+			z-index: 999;
+		}
+		.seven-15{
+			top: 3.33rem;
+			left: 0.73rem;
+			z-index: 999;
+		}
+		.seven-16{
+			top: 3.33rem;
+			left: 1.12rem;
+			z-index: 999;
+		}
+		.seven-17{
+			top: 3.33rem;
+			left: 2.53rem;
+			z-index: 999;
+		}
+		.seven-18{
+			top: 3.33rem;
+			left: 2.992rem;
+			z-index: 999;
+		}
+		.seven-19{
+			top: 3.75rem;
+			left: 1.12rem;
+			z-index: 999;
+		}
+		.seven-20{
+			top: 3.75rem;
+			left: 2.53rem;
+			z-index: 999;
+		}
+			.seven-21{
+			top: 4.33rem;
+			left: 1.83rem;
+			z-index: 999;
 		}
