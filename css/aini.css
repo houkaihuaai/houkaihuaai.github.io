@@ -50,7 +50,6 @@ html {
 			top: -1.5rem;
 			left: 2rem;
 			opacity: 0;
-			z-index: 999;
 			
 		    -webkit-transition: all 0.5s linear 0.3s;
 		}
@@ -402,40 +401,87 @@ html {
 			
 		}
 		.str-1{
+			width: 0rem;
+			height: 0rem;
+			z-index: 999;
+			top: 2.52rem;
+			left: 1.55rem;
+			opacity: 0;
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 2) 0.5s;
+					
+		}
+		
+		.section.active .str-1 {
 			width: 2.1rem;
 			height: 2.3rem;
-			z-index: 999;
 			top: 1.37rem;
 			left: 0.5rem;
+			opacity: 1;
 			
 		}
 		.t1{
 			color: #f14483;
 			position: absolute;
-			top: 3.85rem;
+			top: 1rem;
 			left: 0.64rem;
 			z-index: 999;
+			opacity: 0;
+			
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 1.53) 1s;
+		}
+		
+		.section.active .t1 {
+			opacity: 1;
+			
+			top: 3.85rem;
 		}
 		.t2{
 			color: #f14483;
 			position: absolute;
-			top: 4.2rem;
+			top: 1rem;
 			left: 0.64rem;
 			z-index: 999;
+			opacity: 0;
+			
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 1.53) 1.3s;
+		}
+		
+		.section.active .t2 {
+			opacity: 1;
+			
+			top: 4.2rem;
 		}
 		.t3{
 			color: #f14483;
 			position: absolute;
-			top: 4.55rem;
+			top: 1rem;
 			left: 0.64rem;
 			z-index: 999;
+			opacity: 0;
+			
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 1.53) 1.6s;
+		}
+		
+		.section.active .t3 {
+			opacity: 1;
+			
+			top: 4.55rem;
 		}
 		.t4{
 			color: #f14483;
 			position: absolute;
-			top: 4.85rem;
+			top: 1rem;
 			left: 0.64rem;
 			z-index: 999;
+			opacity: 0;
+			
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 1.53) 1.9s;
+		}
+		
+		.section.active .t4 {
+			opacity: 1;
+			
+			top: 4.85rem;
 		}
 		
 		.four{
@@ -469,7 +515,7 @@ html {
 		}
 		
 		.section.active .four-2 {
-			right: 0.4rem;
+			right: 0.6rem;
 			opacity: 1;
 			
 		}
@@ -477,53 +523,132 @@ html {
 			height: 2.57rem;
 			width: 1.36rem;
 			top: 0.88rem;
-			left: 0.3rem;
-			z-index: 999;
+			left: 3.3rem;
+			z-index: 99;
+		   		opacity: 0;
+		    -webkit-transition: all 1s linear 1s;
+					-webkit-transform: rotate(0deg);
+		    
+		}
+		
+		.section.active .four-3 {
+					-webkit-transform: rotate(360deg);
+					left: 0.3rem;
+			opacity: 1;
+			
 		}
 		.four-4{
 			height: 2.57rem;
 			width: 1.49rem;
 			top: 0.88rem;
-			left: 1.69rem;
-			z-index: 999;
+			left: -1rem;
+			z-index: 99;
+			
+		   		opacity: 0;
+		    -webkit-transition: all 1s linear 1s;
+					-webkit-transform: rotate(0deg);
+		    
+		}
+		
+		.section.active .four-4 {
+					-webkit-transform: rotate(360deg);
+					left: 1.69rem;
+			opacity: 1;
 			
 		}
 		.four-5{
-			height: 1.85rem;
+			height: 0rem;
+			width: 0rem;
+			top: 4.47rem;
+			left: 1.72rem;
+			opacity: 0;
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 2) 0.5s;
+					
+		}
+		
+		.section.active .four-5 {
+		height: 1.85rem;
 			width: 2.86rem;
 			top: 3.55rem;
 			left: 0.3rem;
+			opacity: 1;
+			
 		}
 		.text{
 			height: 3.5rem;
 			width: 2.2rem;
 			position: absolute;
 			top: 1.6rem;
-			left: 0.73rem;
+			left: 4rem;
 			z-index: 999;
 			text-align: center;
 			color: #f14483;
+			
+		   		opacity: 0;
+		    -webkit-transition: all 1s linear 1s;
+					-webkit-transform: rotate(0deg);
+		    
+		}
+		
+		.section.active .text {
+					-webkit-transform: rotate(-360deg);
+					left: 0.73rem;
+			opacity: 1;
 			
 		}
 		
 		
 		.six-1{
 			top: 1.6rem;
-			left: 0.3rem;
+			left: 3.3rem;
 			height: 1.85rem;
 			width: 1.36rem;
+		   		opacity: 0;
+		    -webkit-transition: all 1s linear 1s;
+					-webkit-transform: rotate(0deg);
+		    
+		}
+		
+		.section.active .six-1 {
+					-webkit-transform: rotate(360deg);
+					left: 0.3rem;
+			opacity: 1;
+			
 		}
 		.six-2{
 			top: 1.6rem;
-			left: 1.75rem;
+			left: -1.75rem;
 			height: 1.85rem;
 			width: 1.36rem;
+		   		opacity: 0;
+		    -webkit-transition: all 1s linear 1s;
+					-webkit-transform: rotate(0deg);
+		    
+		}
+		
+		.section.active .six-2 {
+					-webkit-transform: rotate(360deg);
+					left: 1.75rem;
+			opacity: 1;
+			
 		}
 		.six-3{
-			top: 3.56rem;
+			top: 4.47rem;
+			left: 1.72rem;
+			height: 0rem;
+			width: 0rem;
+				opacity: 0;
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 2) 0.5s;
+					
+		}
+		
+		.section.active .six-3 {
+		height: 1.85rem;
+			width: 2.86rem;
+			top: 3.55rem;
 			left: 0.3rem;
-			height: 1.85rem;
-			width: 2.87rem;
+			opacity: 1;
+			
 		}
 		.six-4{
 			color: #f14483;
@@ -552,129 +677,524 @@ html {
 			top: 1.34rem;
 			left: 1.4rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.six-7{
 			top: 5.16rem;
 			left: 0.2rem;
 			z-index: 999;
 			
-		}
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		
 		/*第七页*/
 		.seven-1{
+			width: 0rem;
+			height: 0rem;
+			top: 1.925rem;
+			left: 0.97rem;
+			z-index: 999;
+				opacity: 0;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .seven-1 {
+			width: 0.75rem;
+			height: 0.8rem;
 			top: 1.6rem;
 			left: 0.57rem;
-			z-index: 999;
+			opacity: 1;
+			
 		}
 		.seven-2{
+			top: 1.925rem;
+			left: 3.07rem;
+			z-index: 999;
+			width: 0rem;
+			height: 0rem;
+		    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .seven-2 {
+			width: 0.75rem;
+			height: 0.8rem;
 			top: 1.6rem;
 			left: 2.67rem;
-			z-index: 999;
+			opacity: 1;
 			
 		}
 		.seven-3{
+			top: 2.85rem;
+			left: 1.02rem;
+			z-index: 999;
+			height: 0rem;
+				width: 0rem;
+			
+			    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .seven-3 {
+			width: 0.9rem;
+			height: 0.9rem;
 			top: 2.4rem;
 			left: 0.57rem;
-			z-index: 999;
-			height: 0.9rem;
+			opacity: 1;
 			
 		}
 		.seven-4{
+			top: 1.4rem;
+			left: 0.54rem;
+			z-index: 999;
+			opacity: 0;
+			
+				height: 2.9rem;
+				width: 2.9rem;
+			
+			    -webkit-transition: all 1s linear 1s;
+		}
+		
+		.section.active .seven-4 {
+			width: 0.9rem;
+			height: 0.9rem;
 			top: 2.4rem;
 			left: 1.54rem;
-			z-index: 999;
+			opacity: 1;
 			
 		}
 		.seven-5{
+			top: 2.85rem;
+			left: 2.98rem;
+			z-index: 999;
+			
+			height: 0rem;
+				width: 0rem;
+			
+			    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .seven-5 {
+			width: 0.9rem;
+			height: 0.9rem;
 			top: 2.4rem;
 			left: 2.53rem;
-			z-index: 999;
+			opacity: 1;
 			
 		}
 		.seven-6{
+			top: 3.81rem;
+			left: 1.99rem;
+			z-index: 999;
+			
+				height: 0rem;
+				width: 0rem;
+			
+			    -webkit-transition: all 0.5s linear 0.5s;
+		}
+		
+		.section.active .seven-6 {
+			width: 0.9rem;
+			height: 0.9rem;
 			top: 3.36rem;
 			left: 1.54rem;
-			z-index: 999;
+			opacity: 1;
 			
 		}
 		.seven-7{
 			top: 2rem;
 			left: 0.15rem;
 			z-index: 999;
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
 			
-		}
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-8{
 			top: 2.4rem;
 			left: 0.15rem;
 			z-index: 999;
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
 			
-		}
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-9{
 
 			top: 2.8rem;
 			left: 0.15rem;
 			z-index: 999;
 			
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-10{
 			top: 2rem;
 			left: 1.4rem;
 			z-index: 999;
 			
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-11{
 			top: 2rem;
 			left: 2.24rem;
 			z-index: 999;
 			
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-12{
 			top: 2rem;
 			left: 3.5rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-13{
 			top: 2.4rem;
 			left: 3.5rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-14{
 			top: 2.8rem;
 			left: 3.5rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-15{
 			top: 3.33rem;
 			left: 0.73rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-16{
 			top: 3.33rem;
 			left: 1.12rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-17{
 			top: 3.33rem;
 			left: 2.53rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-18{
 			top: 3.33rem;
 			left: 2.992rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-19{
 			top: 3.75rem;
 			left: 1.12rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 		.seven-20{
 			top: 3.75rem;
 			left: 2.53rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
 			.seven-21{
-			top: 4.33rem;
+			top: 4.43rem;
 			left: 1.83rem;
 			z-index: 999;
-		}
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			
+			
+			.ten-1{
+				width: 1rem;
+				height: 1rem;
+				z-index: 999;
+				top: 1.5rem;
+				left: 0.5rem;
+			-webkit-animation: ball-running 1s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			.ten-2{
+				width: 1rem;
+				height: 1rem;
+				z-index: 999;
+				top: 1.5rem;
+				left: 1.5rem;
+			-webkit-animation: ball-running 1.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			.ten-3{
+				width: 1rem;
+				height: 1rem;
+				z-index: 999;
+				top: 1.5rem;
+				left: 2.5rem;
+			-webkit-animation: ball-running 2s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			.ten-4{
+				width: 2rem;
+				height: 1rem;
+				z-index: 999;
+					top: 5rem;
+				left: 1rem;
+			}
+			.ten-9{
+				width: 0.5rem;
+				height: 0.5rem;
+				z-index: 999;
+				top: 3.9rem;
+				left: 1.8rem;
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			.ten-6{
+				width: 0.5rem;
+				height: 0.5rem;
+				z-index: 999;
+				top: 2.5rem;
+				left: 1.8rem;
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			.ten-7{
+				width: 0.5rem;
+				height: 0.5rem;
+				z-index: 999;
+				top: 3.2rem;
+				left: 1.8rem;
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+			.ten-8{
+				width: 0.5rem;
+				height: 0.5rem;
+				z-index: 999;
+				top: 4.5rem;
+				left: 1.8rem;
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
