@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.fullpage.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/qiuhun.css"/>
+		
+
+	</head>
+
+	<body>
+		
+		  <div class="music">
+			<img id="musicImg" src="img/music.svg" />
+			<audio id="mp3" style="display: none;" controls autoplay="autoplay">
+				<source src="img/MP3/王童语 - 丫头.mp3" type="audio/ogg">
+			</audio>
+		</div>
+		<div id="full-page">
+	  
+			<div class="section">
+				<img class="one" src="img/o_1bff202hg3uh1uhv11aj18kf8rr.png"/>
+				<img class="one-1" src="img/o_1bff202hg1g3g14br1b8m1nqgn4vq.png"/>
+				<img class="one-2" src="img/o_1bff255l11p44d9s19991g9q92h2u.png"/>
+				<img class="one-3" src="img/o_1bff23qeq173uffsdn7qfg1t8q2g.png"/>
+				<img class="one-4" src="img/o_1bff30f924pkvcg1fl5a01o4q61.png"/>
+				<img class="one-5" src="img/o_1bff30f931lom15uk18a31pld1u62 (1).png"/>
+				<img class="one-6" src="img/o_1bff30o8k1a841i6f17bv1tomri26v.png"/>
+				<img class="one-7" src="img/o_1bff30o8k6ni1ho81p7r1uhf11vm70.png"/>
+				<img class="one-9" src="img/o_1bff30f93185m10jsjnl1mji15qb66.png"/>
+				<img class="one-8" src="img/o_1bff30f931si7enu12cnt001eij64.png"/>
+				<p class="text">我最亲爱的你</p>
+				<p class="text-1">我有话对你说</p>
+				<p class="text-2">-2017年8月3日&nbsp;&nbsp;秋天-</p>
+				
+			</div>
+		
+			<div class="section">
+				<img class="two" src="img/微信图片_20170803182920.jpg"/>
+				<div class="t">
+
+					<p>一辈子的爱人，  </p>
+					<p>不是一场轰轰烈烈的爱情，</p>
+					<p>也不是什么承诺和誓言。</p>
+					<p>而是当所有人都离弃你的时候，</p>
+					<p>只有他在默默陪伴着你。</p>
+					<p>其实我不敢想象，</p>
+					<p>没有你，</p>
+					<p>生活会怎样。</p>
+				</div>
+				<img class="two-2" src="img/o_1bf1p95jbi8k1kivjgq7e714cn2b.png">
+				<img class="two-3" src="img/o_1bf1p95jblrp193r1t8111bl1b0d2c.png">
+				<img class="two-4" src="img/o_1bf1p95jb1beo1o1sbbd5031t1l2d.png">
+				<img class="two-5" src="img/o_1bf1p95jb1fis18a21pmh1k5j1q6429 (1).png">
+				<img class="two-6" src="img/o_1bf1p95jbp881dkku9b16lc1vai2a (1).png">
+				<img class="two-7" src="img/o_1bc7u1c5c4th1953t8m1fqaiuc4f.png">
+				
+			</div>
+		
+			<div class="section">
+			
+			</div>
+			<div class="section">
+			</div>
+			<div class="section">
+			</div>
+			<div class="section">
+			</div>
+			<div class="section">
+			
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#full-page").fullpage({
+					verticalCentered: true, //内容是否居中
+					sectionsColor: ["#fbf0d4", "#fbf0d4", "#dbc4a5", "#dbc4a5","#dbc4a5","#dbc4a5","#dbc4a5"], //背景色
+					anchors: ["p1", "p2", "p3", "p4"], //描点
+					scrollingSpeed: 700, //切换的速度
+					navigation: true, // 导航
+					navigationPosition: "right", //导航的位置
+					//navigationTooltips: ["提示文字1", "提示文字2", "提示文字3", "提示文字4"], //导航提示文字
+					continuousVertical: true, // 循环切换，不回弹
+					css3: true,
+
+					//回调函数 
+					// 已经进来的时候
+					afterLoad: function(anchorLink, index) {
+
+					},
+
+					// 开始要离开的时候
+					onLeave: function(index, nextIndex, direction) {
+
+					},
+					// 页面加载完成
+					afterRender: function() {
+
+					},
+
+				});
+			});
+			
+			var music = document.getElementsByClassName("music")[0];
+			var musicImg = document.getElementById("musicImg");
+			var mp3 = document.getElementById("mp3");
+
+			musicImg.onclick = function(){
+				if(mp3.paused == true) {
+					mp3.play();
+					musicImg.style.webkitAnimationPlayState = "running";
+				} else {
+					mp3.pause();
+					musicImg.style.webkitAnimationPlayState = "paused";
+				}
+			}
+		</script>
+	</body>
+
+</html>

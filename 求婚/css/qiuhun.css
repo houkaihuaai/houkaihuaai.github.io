@@ -1,0 +1,291 @@
+html {
+			font-size: calc(100vw/4);
+		}
+		
+		body {
+			font-size: 0.16rem;
+		}
+		
+		#full-page {
+			width: 100%;
+			max-width: 4rem;
+			margin: 0px auto;
+			max-height: 6.1rem;
+		}
+           .music {
+				position: fixed;
+				z-index: 999;
+				top: 0.2rem;
+				right: 0.2rem;
+			}
+			
+			.music img {
+				width: 0.4rem;
+				-webkit-animation: auto-play 2s linear infinite;
+			}
+			
+			@-webkit-keyframes auto-play {
+				from {
+					-webkit-transform: rotate(0deg);
+				}
+				to {
+					-webkit-transform: rotate(359deg);
+				}
+			}		
+		
+		.section {
+			height: 100%;
+			width: 100%;
+			position: relative;
+			background-image: url(../img/o_1bff1lfk51revskj13t7pdg1lfj9.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			
+		}
+		
+		.section img {
+			position: absolute;
+		}
+		.one{
+			top: -1rem;
+			left: 0;
+			opacity: 0;
+			
+		    -webkit-transition: all 0.5s linear 0.3s;
+		}
+		
+		.section.active .one {
+			top: 0rem;
+			opacity: 1;
+			
+		}
+		.one-1{
+			top: -1rem;
+			left: 0.5rem;
+			opacity: 0;
+			
+		    -webkit-transition: all 0.5s linear 0.8s;
+		}
+		
+		.section.active .one-1 {
+			top: 0rem;
+			opacity: 1;
+			
+		}
+		.one-2{
+			width: 1.73rem;
+			height: 1.73rem;
+			top: -2rem;
+			right: 0.1rem;
+				opacity: 0;
+			
+		    -webkit-transition: all 1s linear 1.3s;
+		}
+		
+		.section.active .one-2 {
+			top: 0rem;
+			opacity: 1;
+			
+		}
+		.one-3{
+		
+			top: 0.63rem;
+			left: -0.5rem;
+			-webkit-animation: ball-running 0.5s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+		.one-5{
+		
+			top: 2.04rem;
+			right: -2rem;
+			    -webkit-transition: all 0.5s linear 1.3s;
+			opacity: 0;
+		    
+		}
+		
+		.section.active .one-5 {
+			right: 0.2rem;
+			opacity: 1;
+			}
+         .one-4{
+		
+			top: 2.1rem;
+			left: -3rem;
+			    -webkit-transition: all 0.5s linear 1.3s;
+			opacity: 0;
+		    
+		}
+		
+		.section.active .one-4 {
+			left: 0.49rem;
+			opacity: 1;
+			}
+		.one-6{
+		
+			top: 1.82rem;
+			left: 0.59rem;
+		}
+		.one-6{
+		
+			top: 1.82rem;
+			left: 0.59rem;
+			-webkit-animation: ball-running 1s linear infinite alternate ;
+				-webkit-animation-play-state: running;
+			}
+			
+			@-webkit-keyframes ball-running{
+				from{
+					opacity: 0;
+				}
+				to{
+					opacity: 1;
+				}
+			}
+		.one-8{
+		
+			top: 2.1rem;
+			right: 0.1rem;
+			    -webkit-transition: all 0.5s linear 2s;
+			opacity: 0;
+		    
+		}
+		
+		.section.active .one-8 {
+			opacity: 1;
+			}
+		.one-7{
+		
+			top: 3.14rem;
+			left : 0.44rem;
+		    -webkit-transition: all 0.5s linear 2s;
+			opacity: 0;
+		    
+		}
+		
+		.section.active .one-7 {
+			opacity: 1;
+			}
+		.one-9{
+		
+			top: 2.42rem;
+			left : 0.09rem;
+		    -webkit-transition: all 0.5s linear 2s;
+			opacity: 0;
+		    
+		}
+		
+		.section.active .one-9 {
+			opacity: 1;
+			}
+		.text{
+			position: absolute;
+			font-size: 0.28rem;
+			font-family: "仿宋";
+			font-weight: 800;
+			left: 1.1rem;
+			top: 0rem;
+					opacity: 0;
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 2) 2.5s;
+					
+		}
+		
+		.section.active .text {
+		
+			top: 4.2rem;
+			opacity: 1;
+			
+		}
+		.text-1{
+			position: absolute;
+			font-size: 0.28rem;
+			font-family: "仿宋";
+			font-weight: 800;
+			
+			left: 1.1rem;
+			top: 0rem;
+				opacity: 0;
+			-webkit-transition: all 1s cubic-bezier(0.79, 1.01, 0.52, 2) 2s;
+					
+		}
+		
+		.section.active .text-1 {
+		
+			top: 4.54rem;
+			opacity: 1;
+			
+		}
+		.text-2{
+			position: absolute;
+			font-size: 0.22rem;
+			left: 1rem;
+			top: 5rem;
+			opacity: 0;
+			-webkit-transition: all 1s linear 2s;
+					
+		}
+		
+		.section.active .text-2 {
+		
+			opacity: 1;
+			
+		}
+		.two{
+			width: 3.85rem;
+			height: 3.5rem;
+			top: 0.07rem;
+			left: 0.07rem;
+		}
+		.t{
+			width: 2.5rem;
+			height: 2.5rem;
+			position: absolute;
+			bottom: 0;
+			right: 0.07rem;
+			line-height: 0.8em;
+			text-align: right;
+			font-weight: 600;
+		}
+		.t p{
+			padding: 0;
+		}
+		.two-2{
+		
+			top: 3.89rem;
+			left: 0.27rem;
+		}
+		.two-3{
+		
+			top: 4.28rem;
+			left: 0.6rem;
+		}
+			.two-4{
+		
+			top: 4.72rem;
+			left: 0.37rem;
+		}
+	.two-5{
+		
+			top: 5.17rem;
+			left: 0.37rem;
+			z-index: 9;
+		}
+			.two-6{
+			z-index: 9;
+		
+			top: 5.53rem;
+			left: 0.6rem;
+		}
+			.two-7{
+		
+			top: 5.09rem;
+			left: 0.17rem;
+		}
