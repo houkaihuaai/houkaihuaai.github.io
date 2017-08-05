@@ -374,6 +374,13 @@ html {
 			width: inherit;
 			top: 0;
 			left: 0;
+			opacity: 0;
+			-webkit-transition: all 0.5s linear 2.5s;
+					
+		}
+		
+		.section.active .str {
+			opacity: 1;
 		}
 		.str-1{
 			height: 0rem;
