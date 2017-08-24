@@ -15,7 +15,10 @@ html {
 .img{
 	width: 100%;
 }
-
+input{
+	height: 0.18rem;
+	width: 2rem;
+}
 .img ul{
 	width: 100%;
 	list-style: none;
